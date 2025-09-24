@@ -24,12 +24,16 @@ This project follows **Spec-Driven Development (SDD)** using the GitHub Spec Kit
 
 ```
 HX-Data-Ingestion-Project/
-├── .specify/                    # Spec Kit templates and scripts
-│   ├── templates/              # Command templates for AI agents
-│   └── scripts/                # Automation scripts (bash/powershell)
-├── memory/                     # Project constitution and principles
-├── specs/                      # Feature specifications (created per feature)
-├── docs/                       # Additional documentation
+├── spec kit/                    # Spec-Driven Development workspace
+│   ├── .specify/               # Spec Kit templates and scripts
+│   │   ├── templates/          # Command templates for AI agents
+│   │   └── scripts/            # Automation scripts (bash/powershell)
+│   ├── memory/                 # Project constitution and principles
+│   ├── specs/                  # Feature specifications (created per feature)
+│   ├── docs/                   # Additional documentation
+│   └── README.md               # Spec Kit workspace overview
+├── src/                        # Source code (created during implementation)
+├── tests/                      # Test files (created during implementation)
 └── README.md                   # This file
 ```
 
@@ -50,6 +54,14 @@ The project has access to the following environment variables for future use:
 
 ### Development Workflow
 
+Navigate to the `spec kit/` directory to begin specification work:
+
+```bash
+cd "spec kit"
+```
+
+Then follow the SDD workflow:
+
 1. **Initialize Feature**: Use `/specify` to define what you want to build
 2. **Clarify Requirements**: Use `/clarify` to resolve any ambiguities
 3. **Plan Implementation**: Use `/plan` to define technical approach
@@ -65,19 +77,21 @@ The project has access to the following environment variables for future use:
 
 ## Documentation
 
-- [Spec-Driven Methodology](./spec-driven-methodology.md) - Complete SDD methodology
-- [Spec Kit Knowledge](./SPEC_KIT_KNOWLEDGE.md) - GitHub Spec Kit overview
-- [Latest Updates](./NEW_SPEC_KIT_UPDATES_ANALYSIS.md) - Recent enhancements including `/clarify` and `/analyze`
+- **[Spec Kit Workspace](./spec%20kit/)** - Complete SDD workspace with templates and specifications
+- **[Spec-Driven Methodology](./spec-driven-methodology.md)** - Complete SDD methodology
+- **[Spec Kit Knowledge](./SPEC_KIT_KNOWLEDGE.md)** - GitHub Spec Kit overview
+- **[Latest Updates](./NEW_SPEC_KIT_UPDATES_ANALYSIS.md)** - Recent enhancements including `/clarify` and `/analyze`
 
 ## Contributing
 
 This project uses Spec-Driven Development. All contributions should follow the established workflow:
 
-1. Create feature specifications using `/specify`
-2. Clarify requirements using `/clarify`
-3. Plan implementation using `/plan`
-4. Validate with `/analyze`
-5. Implement using `/implement`
+1. Navigate to `spec kit/` directory
+2. Create feature specifications using `/specify`
+3. Clarify requirements using `/clarify`
+4. Plan implementation using `/plan`
+5. Validate with `/analyze`
+6. Implement using `/implement`
 
 ## License
 

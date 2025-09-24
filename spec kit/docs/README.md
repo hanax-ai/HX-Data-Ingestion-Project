@@ -5,9 +5,9 @@ This directory contains additional documentation for the HX Data Ingestion Proje
 ## Contents
 
 ### Methodology Documentation
-- **[Spec-Driven Methodology](../spec-driven-methodology.md)** - Complete SDD methodology overview
-- **[Spec Kit Knowledge](../SPEC_KIT_KNOWLEDGE.md)** - GitHub Spec Kit summary and commands
-- **[Latest Updates Analysis](../NEW_SPEC_KIT_UPDATES_ANALYSIS.md)** - Recent enhancements including `/clarify` and `/analyze` commands
+- **[Spec-Driven Methodology](../../spec-driven-methodology.md)** - Complete SDD methodology overview
+- **[Spec Kit Knowledge](../../SPEC_KIT_KNOWLEDGE.md)** - GitHub Spec Kit summary and commands
+- **[Latest Updates Analysis](../../NEW_SPEC_KIT_UPDATES_ANALYSIS.md)** - Recent enhancements including `/clarify` and `/analyze` commands
 
 ### Project Documentation
 - **[Project Constitution](../memory/constitution.md)** - Governing principles and guidelines
