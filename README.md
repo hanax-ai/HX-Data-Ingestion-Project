@@ -4,11 +4,17 @@
 
 ## Project Status
 
-🚧 **Specification Phase** - Currently defining requirements and architecture using Spec-Driven Development methodology.
+🔬 **Discovery Phase** - Currently documenting As-Is behavior of existing Crawl4AI prototype using Spec-Driven Development methodology.
 
 ## Quick Start
 
-### For Development Work
+### For Discovery Phase Work (Current)
+Navigate to Discovery phase tracking and prototype analysis:
+- **[Discovery Tracker](./prototype/Discovery/2025-09-24--discovery-phase--deliverable-tracker.md)** - Complete deliverable tracking (6/17 complete)
+- **[Priority Order](./prototype/Discovery/2025-09-24--discovery-phase--priority-order.md)** - Strategic execution roadmap
+- **[Retrospective Analysis](./prototype/Discovery/2025-09-24--discovery-phase--retrospective-analysis.md)** - Comprehensive progress assessment
+
+### For Development Work (Future)
 Navigate to the Spec Kit workspace to begin feature development:
 ```bash
 cd "spec kit"
@@ -44,6 +50,14 @@ HX-Data-Ingestion-Project/
 │   ├── analyses/               # Research and analytical documents
 │   ├── updates/                # Changelogs and status updates
 │   └── adr/                    # Architecture Decision Records
+├── prototype/                   # 🔬 Discovery phase and prototype analysis
+│   ├── Discovery/              # Discovery phase management and tracking
+│   └── crawl4ai/               # Crawl4AI prototype with As-Is documentation
+│       ├── docs/               # As-Is specifications and templates
+│       ├── outputs/            # Run artifacts organized by timestamp
+│       ├── examples/           # 5 example scripts for analysis
+│       ├── src/                # Core modules (utils, doc_ingest, rag_agent)
+│       └── app/                # Streamlit web interface
 ├── spec kit/                   # 🎯 Spec-Driven Development workspace
 │   ├── .specify/              # Spec Kit templates and scripts
 │   ├── memory/                # Project constitution and principles
@@ -69,6 +83,7 @@ HX-Data-Ingestion-Project/
 ### 🔍 Analysis & Research
 - **[Spec Kit Updates Analysis](./knowledge-base/analyses/2025-09-24--spec-kit--updates-analysis.md)** - New `/clarify` and `/analyze` commands
 - **[Repository Standards Analysis](./knowledge-base/analyses/2025-09-24--repository-standards--feedback-analysis.md)** - Documentation structure decisions
+- **[Discovery Phase Retrospective](./prototype/Discovery/2025-09-24--discovery-phase--retrospective-analysis.md)** - Comprehensive progress assessment
 
 ## Environment Variables
 
@@ -87,6 +102,13 @@ The project has access to the following environment variables for future use:
 
 ### Development Workflow
 
+#### Current Phase: Discovery (As-Is Documentation)
+1. **Review Discovery Status**: Check [Discovery Tracker](./prototype/Discovery/2025-09-24--discovery-phase--deliverable-tracker.md) for current progress
+2. **Follow Priority Order**: Use [Priority Order](./prototype/Discovery/2025-09-24--discovery-phase--priority-order.md) for systematic completion
+3. **Apply As-Is Template**: Use proven template in `prototype/crawl4ai/docs/templates/`
+4. **Document Current Behavior**: Focus strictly on As-Is behavior, no redesigns or refactors
+
+#### Future Phase: Specification & Implementation
 1. **Read the Documentation**: Start with the [Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)
 2. **Navigate to Workspace**: `cd "spec kit"`
 3. **Follow SDD Process**: Use the [SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)
