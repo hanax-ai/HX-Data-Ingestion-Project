@@ -161,3 +161,11 @@ logs/
 # Temporary files
 tmp/
 temp/
+
+# Prototype outputs (keep structure, skip heavy artifacts)
+prototype/crawl4ai/outputs/*
+!prototype/crawl4ai/outputs/.gitkeep
+!prototype/crawl4ai/outputs/README.md
+
+# Optional: local configs
+prototype/crawl4ai/configs/*.local.*

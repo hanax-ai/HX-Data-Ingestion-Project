@@ -1,0 +1,2 @@
+# This file ensures the outputs/ directory structure is preserved in git
+# while excluding the actual run artifacts from version control

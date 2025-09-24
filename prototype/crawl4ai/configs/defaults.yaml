@@ -1,0 +1,32 @@
+# Default configuration for Crawl4AI prototype scripts
+# This file provides default values that can be overridden by local configs
+
+# Common crawling settings
+crawling:
+  max_concurrent: 10
+  timeout_seconds: 30
+  retry_attempts: 3
+  delay_between_requests: 1.0
+
+# Output settings
+output:
+  base_directory: "./outputs"
+  timestamp_format: "%Y-%m-%dT%H%M%SZ"
+  include_logs: true
+  include_manifest: true
+
+# Browser configuration
+browser:
+  headless: true
+  verbose: false
+  user_agent: "Crawl4AI-Prototype/1.0"
+
+# Content processing
+content:
+  max_chunk_size: 1000
+  include_metadata: true
+  preserve_formatting: true
+
+# Note: These are default values for reference
+# Individual scripts may override these settings
+# Local configs (*.local.yaml) are gitignored and take precedence
