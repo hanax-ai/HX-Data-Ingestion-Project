@@ -1,3 +1,14 @@
+---
+title: GitHub Spec Kit Overview and Commands
+owner: @jarvisr
+status: Approved
+tags: [spec-kit, overview, sdd, commands]
+summary: Comprehensive overview of GitHub Spec Kit methodology and available commands for SDD.
+sdd_phase: general
+related_specs: []
+constitutional_impact: high
+---
+
 # GitHub Spec Kit Knowledge Summary
 
 ## Overview

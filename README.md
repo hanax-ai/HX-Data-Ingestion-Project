@@ -6,6 +6,20 @@
 
 🚧 **Specification Phase** - Currently defining requirements and architecture using Spec-Driven Development methodology.
 
+## Quick Start
+
+### For Development Work
+Navigate to the Spec Kit workspace to begin feature development:
+```bash
+cd "spec kit"
+```
+
+### For Project Understanding
+Explore the knowledge base for comprehensive project documentation:
+- **[Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)** - High-level project goals and approach
+- **[SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)** - Step-by-step development process
+- **[Latest Updates](./knowledge-base/updates/CHANGELOG.md)** - Recent changes and milestones
+
 ## Methodology
 
 This project follows **Spec-Driven Development (SDD)** using the GitHub Spec Kit, where specifications become executable and drive implementation rather than just guiding it.
@@ -14,28 +28,47 @@ This project follows **Spec-Driven Development (SDD)** using the GitHub Spec Kit
 
 1. **`/constitution`** - Establish project principles and guidelines
 2. **`/specify`** - Define requirements and user stories (WHAT and WHY)
-3. **`/clarify`** - Resolve ambiguities and under-specifications
+3. **`/clarify`** - Resolve ambiguities and under-specifications ⭐ NEW
 4. **`/plan`** - Create technical implementation plan (HOW)
 5. **`/tasks`** - Break down into actionable tasks
-6. **`/analyze`** - Cross-check consistency before implementation
+6. **`/analyze`** - Cross-check consistency before implementation ⭐ NEW
 7. **`/implement`** - Execute the implementation
 
 ## Repository Structure
 
 ```
 HX-Data-Ingestion-Project/
-├── spec kit/                    # Spec-Driven Development workspace
-│   ├── .specify/               # Spec Kit templates and scripts
-│   │   ├── templates/          # Command templates for AI agents
-│   │   └── scripts/            # Automation scripts (bash/powershell)
-│   ├── memory/                 # Project constitution and principles
-│   ├── specs/                  # Feature specifications (created per feature)
-│   ├── docs/                   # Additional documentation
-│   └── README.md               # Spec Kit workspace overview
+├── knowledge-base/              # 📚 Organized project documentation
+│   ├── overview/               # High-level project understanding
+│   ├── guides/                 # How-to guides and procedures
+│   ├── analyses/               # Research and analytical documents
+│   ├── updates/                # Changelogs and status updates
+│   └── adr/                    # Architecture Decision Records
+├── spec kit/                   # 🎯 Spec-Driven Development workspace
+│   ├── .specify/              # Spec Kit templates and scripts
+│   ├── memory/                # Project constitution and principles
+│   ├── specs/                 # Feature specifications workspace
+│   └── docs/                  # SDD-specific documentation
 ├── src/                        # Source code (created during implementation)
 ├── tests/                      # Test files (created during implementation)
 └── README.md                   # This file
 ```
+
+## Knowledge Base
+
+### 📖 Essential Reading
+- **[Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)** - Start here for project understanding
+- **[Spec Kit Overview](./knowledge-base/overview/2025-09-24--spec-kit--overview.md)** - Understanding the SDD methodology
+- **[SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)** - How to develop features using SDD
+
+### 📋 Reference Documentation
+- **[Spec-Driven Methodology](./knowledge-base/guides/2025-09-24--spec-driven-methodology--guide.md)** - Complete SDD methodology
+- **[Latest Updates](./knowledge-base/updates/CHANGELOG.md)** - Project changes and milestones
+- **[Architecture Decisions](./knowledge-base/adr/)** - Formal decision records
+
+### 🔍 Analysis & Research
+- **[Spec Kit Updates Analysis](./knowledge-base/analyses/2025-09-24--spec-kit--updates-analysis.md)** - New `/clarify` and `/analyze` commands
+- **[Repository Standards Analysis](./knowledge-base/analyses/2025-09-24--repository-standards--feedback-analysis.md)** - Documentation structure decisions
 
 ## Environment Variables
 
@@ -54,19 +87,11 @@ The project has access to the following environment variables for future use:
 
 ### Development Workflow
 
-Navigate to the `spec kit/` directory to begin specification work:
-
-```bash
-cd "spec kit"
-```
-
-Then follow the SDD workflow:
-
-1. **Initialize Feature**: Use `/specify` to define what you want to build
-2. **Clarify Requirements**: Use `/clarify` to resolve any ambiguities
-3. **Plan Implementation**: Use `/plan` to define technical approach
-4. **Analyze Consistency**: Use `/analyze` to validate alignment
-5. **Execute**: Use `/implement` to build the feature
+1. **Read the Documentation**: Start with the [Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)
+2. **Navigate to Workspace**: `cd "spec kit"`
+3. **Follow SDD Process**: Use the [SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)
+4. **Begin with Constitution**: Use `/constitution` to establish project principles
+5. **Define Features**: Use `/specify` → `/clarify` → `/plan` → `/analyze` → `/implement`
 
 ## Core Principles
 
@@ -74,24 +99,17 @@ Then follow the SDD workflow:
 - **Executable Specifications**: Specs generate working implementations
 - **Continuous Refinement**: Iterative improvement through AI-powered validation
 - **Constitutional Compliance**: All development aligns with project principles
-
-## Documentation
-
-- **[Spec Kit Workspace](./spec%20kit/)** - Complete SDD workspace with templates and specifications
-- **[Spec-Driven Methodology](./spec-driven-methodology.md)** - Complete SDD methodology
-- **[Spec Kit Knowledge](./SPEC_KIT_KNOWLEDGE.md)** - GitHub Spec Kit overview
-- **[Latest Updates](./NEW_SPEC_KIT_UPDATES_ANALYSIS.md)** - Recent enhancements including `/clarify` and `/analyze`
+- **Documentation Excellence**: Comprehensive, organized, and current documentation
 
 ## Contributing
 
-This project uses Spec-Driven Development. All contributions should follow the established workflow:
+This project uses Spec-Driven Development with enhanced documentation standards:
 
-1. Navigate to `spec kit/` directory
-2. Create feature specifications using `/specify`
-3. Clarify requirements using `/clarify`
-4. Plan implementation using `/plan`
-5. Validate with `/analyze`
-6. Implement using `/implement`
+1. **Review Documentation**: Understand project approach and current status
+2. **Navigate to Workspace**: Work in `spec kit/` directory for feature development
+3. **Follow SDD Workflow**: Use the established 7-step process
+4. **Maintain Standards**: Follow knowledge-base naming conventions and front matter requirements
+5. **Document Decisions**: Use ADR process for architectural choices
 
 ## License
 
@@ -99,4 +117,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Ready to begin specification and development using the enhanced Spec Kit methodology.**
+**Ready to begin specification and development using the enhanced Spec Kit methodology with organized knowledge management.**

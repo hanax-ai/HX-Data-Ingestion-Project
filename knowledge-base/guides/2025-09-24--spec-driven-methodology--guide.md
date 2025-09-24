@@ -1,3 +1,14 @@
+---
+title: Spec-Driven Development Methodology Guide
+owner: @jarvisr
+status: Approved
+tags: [sdd, methodology, guide, workflow]
+summary: Complete guide to Spec-Driven Development methodology and implementation approach.
+sdd_phase: general
+related_specs: []
+constitutional_impact: high
+---
+
 # Specification-Driven Development (SDD)
 
 ## The Power Inversion

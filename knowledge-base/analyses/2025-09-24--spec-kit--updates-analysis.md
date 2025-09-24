@@ -1,3 +1,14 @@
+---
+title: New Spec Kit Updates Analysis - /clarify and /analyze Commands
+owner: @jarvisr
+status: Approved
+tags: [spec-kit, analysis, clarify, analyze, commands]
+summary: Detailed analysis of new /clarify and /analyze commands added to Spec Kit workflow.
+sdd_phase: general
+related_specs: []
+constitutional_impact: low
+---
+
 # New Spec Kit Updates Analysis
 
 ## Summary of Video Transcript Updates

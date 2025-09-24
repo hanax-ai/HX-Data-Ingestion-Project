@@ -1,3 +1,14 @@
+---
+title: Latest Spec Kit Updates - Streamlined 4-Step Process
+owner: @jarvisr
+status: Approved
+tags: [spec-kit, updates, workflow, simplification]
+summary: Analysis of Spec Kit evolution toward simplified 4-step workflow and enhanced iteration cycles.
+sdd_phase: general
+related_specs: []
+constitutional_impact: medium
+---
+
 # Latest Spec Kit Updates - Deep Dive Analysis
 
 ## Major Changes Identified
