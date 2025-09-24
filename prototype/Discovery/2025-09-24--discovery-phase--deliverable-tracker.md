@@ -61,6 +61,11 @@ prototype/
 | **SPEC-005** | As-Is Spec | `2025-09-24--5-crawl_site_recursively--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Recursive crawling logic |
 | **DIAG-001** | Diagram | `1-crawl_single_page-sequence.mmd` | 🔄 Optional | TBD | ✅ In Scope | SPEC-001 | Exported Mermaid sequence diagram |
 | **DIAG-002** | Diagram | `1-crawl_single_page-dataflow.mmd` | 🔄 Optional | TBD | ✅ In Scope | SPEC-001 | Exported Mermaid data flow diagram |
+| **SPEC-006** | As-Is Spec | `2025-09-24--utils--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Core utility functions for ChromaDB integration |
+| **SPEC-007** | As-Is Spec | `2025-09-24--streamlit_app--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Web interface for RAG interactions |
+| **SPEC-008** | As-Is Spec | `2025-09-24--rag_agent--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | RAG agent implementation with Pydantic AI |
+| **SPEC-009** | As-Is Spec | `2025-09-24--doc_ingest--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Document ingestion and processing pipeline |
+| **SPEC-010** | As-Is Spec | `2025-09-24--env_example--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Environment configuration template |
 | **TRACK-001** | Tracking | `2025-09-24--discovery-phase--deliverable-tracker.md` | ✅ Complete | 2025-09-24 | ✅ In Scope | None | This tracker file |
 
 ---
@@ -79,10 +84,13 @@ prototype/
 
 ## Scope Alignment Verification
 
-### ✅ **In Scope Deliverables (11 Total)**
+### ✅ **In Scope Deliverables (17 Total)**
 - **Infrastructure (4):** Directory structure, workspace organization
 - **Templates (1):** Reusable As-Is documentation template
-- **Specifications (5):** One per example script with complete As-Is documentation
+- **Specifications (10):** Complete As-Is documentation for all prototype components
+  - **Example Scripts (5):** 1-crawl_single_page, 2-crawl_docs_sequential, 3-crawl_sitemap_in_parallel, 4-crawl_llms_txt, 5-crawl_site_recursively
+  - **Core Modules (5):** utils, streamlit_app, rag_agent, doc_ingest, .env.example
+- **Diagrams (2):** Optional Mermaid exports
 - **Tracking (1):** This deliverable tracker
 
 ### ❌ **Explicitly Out of Scope**
@@ -96,17 +104,18 @@ prototype/
 ## Progress Summary
 
 ### **Completion Statistics**
-- **Total Deliverables:** 12 identified
-- **Completed:** 6 (50%)
-- **Pending:** 5 (42%)
-- **Optional:** 1 (8%)
+- **Total Deliverables:** 17 identified
+- **Completed:** 6 (35%)
+- **Pending:** 9 (53%)
+- **Optional:** 2 (12%)
 
 ### **Critical Path**
 1. ✅ **Infrastructure Setup** - Complete
 2. ✅ **Template Creation** - Complete  
 3. ✅ **First Spec (Baseline)** - Complete
-4. 🔄 **Remaining 4 Specs** - Pending (sequential execution recommended)
-5. 🔄 **Optional Diagram Exports** - Future consideration
+4. 🔄 **Remaining Example Scripts (4)** - Pending (2-crawl_docs_sequential, 3-crawl_sitemap_in_parallel, 4-crawl_llms_txt, 5-crawl_site_recursively)
+5. 🔄 **Core Module Specs (5)** - Pending (utils, streamlit_app, rag_agent, doc_ingest, .env.example)
+6. 🔄 **Optional Diagram Exports** - Future consideration
 
 ### **Risk Assessment**
 - **🟢 Low Risk:** All critical infrastructure and templates complete
@@ -123,12 +132,21 @@ prototype/
 - [x] Metadata, performance, and artifact tracking included
 - [x] Mermaid diagram flexibility implemented
 
-### **Specification Quality Gate** (1/5 Complete)
+### **Specification Quality Gate** (1/10 Complete)
+
+**Example Scripts (1/5 Complete):**
 - [x] **SPEC-001:** `1-crawl_single_page.py` - Complete with full As-Is documentation
 - [ ] **SPEC-002:** `2-crawl_docs_sequential.py` - Pending
 - [ ] **SPEC-003:** `3-crawl_sitemap_in_parallel.py` - Pending  
 - [ ] **SPEC-004:** `4-crawl_llms_txt.py` - Pending
 - [ ] **SPEC-005:** `5-crawl_site_recursively.py` - Pending
+
+**Core Modules (0/5 Complete):**
+- [ ] **SPEC-006:** `utils.py` - Pending (ChromaDB integration utilities)
+- [ ] **SPEC-007:** `streamlit_app.py` - Pending (Web interface for RAG)
+- [ ] **SPEC-008:** `rag_agent.py` - Pending (RAG agent with Pydantic AI)
+- [ ] **SPEC-009:** `doc_ingest.py` - Pending (Document ingestion pipeline)
+- [ ] **SPEC-010:** `.env.example` - Pending (Environment configuration)
 
 ### **Scope Compliance Gate** ✅ **PASSING**
 - [x] All deliverables align with As-Is documentation scope
@@ -141,9 +159,10 @@ prototype/
 ## Next Actions Required
 
 ### **Immediate (High Priority)**
-1. **Document remaining 4 example scripts** using established template
-2. **Maintain consistent naming conventions** for all As-Is specifications
-3. **Verify each script's current behavior** through actual execution if needed
+1. **Document remaining 4 example scripts** using established template (SPEC-002 through SPEC-005)
+2. **Document all 5 core modules** using established template (SPEC-006 through SPEC-010)
+3. **Maintain consistent naming conventions** for all As-Is specifications
+4. **Verify each component's current behavior** through actual execution/inspection as needed
 
 ### **Optional (Low Priority)**
 1. **Export Mermaid diagrams** to standalone `.mmd` files in `docs/diagrams/`
