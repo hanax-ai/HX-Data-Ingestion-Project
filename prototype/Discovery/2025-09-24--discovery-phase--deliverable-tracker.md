@@ -114,7 +114,7 @@ prototype/
 2. ✅ **Template Creation** - Complete  
 3. ✅ **First Spec (Baseline)** - Complete
 4. 🔄 **Remaining Example Scripts (4)** - Pending (2-crawl_docs_sequential, 3-crawl_sitemap_in_parallel, 4-crawl_llms_txt, 5-crawl_site_recursively)
-5. 🔄 **Core Module Specs (5)** - Pending (utils, streamlit_app, rag_agent, doc_ingest, .env.example)
+5. ✅ **Core Module Specs (2/5 Complete)** - (utils, .env.example) - Foundation Layer Complete
 6. 🔄 **Optional Diagram Exports** - Future consideration
 
 ### **Risk Assessment**
