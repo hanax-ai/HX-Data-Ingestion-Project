@@ -61,7 +61,7 @@ prototype/
 | **SPEC-005** | As-Is Spec | `2025-09-24--5-crawl_site_recursively--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Recursive crawling logic |
 | **DIAG-001** | Diagram | `1-crawl_single_page-sequence.mmd` | 🔄 Optional | TBD | ✅ In Scope | SPEC-001 | Exported Mermaid sequence diagram |
 | **DIAG-002** | Diagram | `1-crawl_single_page-dataflow.mmd` | 🔄 Optional | TBD | ✅ In Scope | SPEC-001 | Exported Mermaid data flow diagram |
-| **SPEC-006** | As-Is Spec | `2025-09-24--utils--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Core utility functions for ChromaDB integration |
+| **SPEC-006** | As-Is Spec | `2025-09-24--utils--as-is.md` | ✅ Complete | 2025-09-24 | ✅ In Scope | TEMP-001 | Core utility functions for ChromaDB integration |
 | **SPEC-007** | As-Is Spec | `2025-09-24--streamlit_app--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Web interface for RAG interactions |
 | **SPEC-008** | As-Is Spec | `2025-09-24--rag_agent--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | RAG agent implementation with Pydantic AI |
 | **SPEC-009** | As-Is Spec | `2025-09-24--doc_ingest--as-is.md` | 🔄 Pending | TBD | ✅ In Scope | TEMP-001 | Document ingestion and processing pipeline |
@@ -105,8 +105,8 @@ prototype/
 
 ### **Completion Statistics**
 - **Total Deliverables:** 17 identified
-- **Completed:** 6 (35%)
-- **Pending:** 9 (53%)
+- **Completed:** 7 (41%)
+- **Pending:** 8 (47%)
 - **Optional:** 2 (12%)
 
 ### **Critical Path**
@@ -141,8 +141,8 @@ prototype/
 - [ ] **SPEC-004:** `4-crawl_llms_txt.py` - Pending
 - [ ] **SPEC-005:** `5-crawl_site_recursively.py` - Pending
 
-**Core Modules (0/5 Complete):**
-- [ ] **SPEC-006:** `utils.py` - Pending (ChromaDB integration utilities)
+**Core Modules (1/5 Complete):**
+- [x] **SPEC-006:** `utils.py` - Complete (ChromaDB integration utilities)
 - [ ] **SPEC-007:** `streamlit_app.py` - Pending (Web interface for RAG)
 - [ ] **SPEC-008:** `rag_agent.py` - Pending (RAG agent with Pydantic AI)
 - [ ] **SPEC-009:** `doc_ingest.py` - Pending (Document ingestion pipeline)
