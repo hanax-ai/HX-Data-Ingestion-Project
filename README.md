@@ -1,21 +1,32 @@
-# HX Data Ingestion Project
+# Citadel - AI-Powered Information Access
 
-**A Spec-Driven Development project for building robust data ingestion workflows**
+**This project demos how modern AI can transform information access. Using a documentation crawler with retrieval-augmented generation (RAG), it collects content from websites, text or Markdown files, and sitemaps. The material is then organized and stored in a searchable knowledge base, which can be explored through an easy-to-use web interface.**
 
 ## Project Status
 
-🔬 **Discovery Phase** - Currently documenting As-Is behavior of existing Crawl4AI prototype using Spec-Driven Development methodology.
+🎯 **Explore Phase** - Building Citadel demo to socialize and gather feedback on our AI-powered information access approach.
+
+**Phase Progression:**
+- ✅ **Discovery Phase** - Completed comprehensive As-Is analysis of prototype
+- 🔄 **Explore Phase** - Current: Building Citadel demo for stakeholder feedback
+- 📋 **Realize Phase** - Future: Implementation based on demo feedback
 
 ## Quick Start
 
-### For Discovery Phase Work (Current)
-Navigate to Discovery phase tracking and prototype analysis:
-- **[Discovery Tracker](./prototype/Discovery/2025-09-24--discovery-phase--deliverable-tracker.md)** - Complete deliverable tracking (6/17 complete)
-- **[Priority Order](./prototype/Discovery/2025-09-24--discovery-phase--priority-order.md)** - Strategic execution roadmap
-- **[Retrospective Analysis](./prototype/Discovery/2025-09-24--discovery-phase--retrospective-analysis.md)** - Comprehensive progress assessment
+### Current Phase: Citadel Demo Development
+Navigate to Explore phase planning and demo development:
+- **[Citadel Demo PRD](./Explore/2025-09-24--citadel-demo--prd.md)** - Product requirements for demo development
+- **[Phase Reality Check](./Explore/2025-09-24--phase-reality-check.md)** - Current phase constraints and focus
+- **[Deliverables Tracker](./Explore/2025-09-24--explore-phase--deliverables-tracker.md)** - Demo development progress
 
-### For Development Work (Future)
-Navigate to the Spec Kit workspace to begin feature development:
+### Discovery Phase Results
+Review completed Discovery phase analysis:
+- **[Final Report](./Discovery/2025-09-24--discovery-phase--final-report.md)** - Comprehensive Discovery findings
+- **[V2 Backlog](./Discovery/2025-09-24--v2-backlog--product-backlog.md)** - 25 evidence-based backlog items
+- **[Consolidated Audit](./Discovery/2025-09-24--consolidated-audit--report.md)** - Engineering audit results
+
+### For Development Work
+Navigate to the Spec Kit workspace for feature development:
 ```bash
 cd "spec kit"
 ```
@@ -25,6 +36,30 @@ Explore the knowledge base for comprehensive project documentation:
 - **[Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)** - High-level project goals and approach
 - **[SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)** - Step-by-step development process
 - **[Latest Updates](./knowledge-base/updates/CHANGELOG.md)** - Recent changes and milestones
+
+## What Citadel Does
+
+Citadel demonstrates modern AI-powered information access through:
+
+**🕷️ Intelligent Crawling**
+- Crawls websites, documentation sites, and sitemaps
+- Processes text files and Markdown documents
+- Handles various content formats and structures
+
+**🧠 AI-Powered Processing**
+- Uses retrieval-augmented generation (RAG) for intelligent content understanding
+- Chunks and organizes content for optimal searchability
+- Maintains context and relationships between information
+
+**🔍 Smart Search & Discovery**
+- Natural language queries against collected content
+- Contextual responses with source attribution
+- Interactive web interface for easy exploration
+
+**📚 Knowledge Base Creation**
+- Automatically organizes content into searchable knowledge base
+- Maintains source links and metadata
+- Enables rapid information discovery and access
 
 ## Methodology
 
@@ -44,20 +79,26 @@ This project follows **Spec-Driven Development (SDD)** using the GitHub Spec Kit
 
 ```
 HX-Data-Ingestion-Project/
+├── Discovery/                   # ✅ Completed Discovery phase analysis
+│   ├── 2025-09-24--discovery-phase--final-report.md
+│   ├── 2025-09-24--v2-backlog--product-backlog.md
+│   └── 2025-09-24--consolidated-audit--report.md
+├── Explore/                     # 🔄 Current: Citadel demo development
+│   ├── 2025-09-24--citadel-demo--prd.md
+│   ├── 2025-09-24--phase-reality-check.md
+│   └── 2025-09-24--explore-phase--deliverables-tracker.md
+├── prototype/                   # 🔬 Original prototype and analysis
+│   └── crawl4ai/               # Crawl4AI prototype with As-Is documentation
+│       ├── docs/               # As-Is specifications and audit results
+│       ├── examples/           # 5 example scripts analyzed
+│       ├── src/                # Core modules (utils, doc_ingest, rag_agent)
+│       └── app/                # Streamlit web interface
 ├── knowledge-base/              # 📚 Organized project documentation
 │   ├── overview/               # High-level project understanding
 │   ├── guides/                 # How-to guides and procedures
 │   ├── analyses/               # Research and analytical documents
 │   ├── updates/                # Changelogs and status updates
 │   └── adr/                    # Architecture Decision Records
-├── prototype/                   # 🔬 Discovery phase and prototype analysis
-│   ├── Discovery/              # Discovery phase management and tracking
-│   └── crawl4ai/               # Crawl4AI prototype with As-Is documentation
-│       ├── docs/               # As-Is specifications and templates
-│       ├── outputs/            # Run artifacts organized by timestamp
-│       ├── examples/           # 5 example scripts for analysis
-│       ├── src/                # Core modules (utils, doc_ingest, rag_agent)
-│       └── app/                # Streamlit web interface
 ├── spec kit/                   # 🎯 Spec-Driven Development workspace
 │   ├── .specify/              # Spec Kit templates and scripts
 │   ├── memory/                # Project constitution and principles
@@ -68,70 +109,82 @@ HX-Data-Ingestion-Project/
 └── README.md                   # This file
 ```
 
+## Current Focus: Demo Development
+
+**Goal:** Transform the prototype into **Citadel** - a polished demo that showcases AI-powered information access capabilities.
+
+**Not Production:** This is a demo to socialize our approach and gather feedback, not production-ready software.
+
+**Key Demo Features:**
+- Consistent "Citadel" branding and identity
+- End-to-end workflow demonstration (crawl → process → query)
+- Built-in feedback collection mechanisms
+- Simple deployment for stakeholder demonstrations
+
 ## Knowledge Base
 
 ### 📖 Essential Reading
 - **[Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)** - Start here for project understanding
-- **[Spec Kit Overview](./knowledge-base/overview/2025-09-24--spec-kit--overview.md)** - Understanding the SDD methodology
-- **[SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)** - How to develop features using SDD
+- **[Citadel Demo PRD](./Explore/2025-09-24--citadel-demo--prd.md)** - Current phase requirements
+- **[SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)** - Development methodology
 
 ### 📋 Reference Documentation
-- **[Spec-Driven Methodology](./knowledge-base/guides/2025-09-24--spec-driven-methodology--guide.md)** - Complete SDD methodology
-- **[Latest Updates](./knowledge-base/updates/CHANGELOG.md)** - Project changes and milestones
+- **[Discovery Final Report](./Discovery/2025-09-24--discovery-phase--final-report.md)** - Complete prototype analysis
+- **[V2 Backlog](./Discovery/2025-09-24--v2-backlog--product-backlog.md)** - 25 evidence-based items for future development
 - **[Architecture Decisions](./knowledge-base/adr/)** - Formal decision records
 
 ### 🔍 Analysis & Research
-- **[Spec Kit Updates Analysis](./knowledge-base/analyses/2025-09-24--spec-kit--updates-analysis.md)** - New `/clarify` and `/analyze` commands
-- **[Repository Standards Analysis](./knowledge-base/analyses/2025-09-24--repository-standards--feedback-analysis.md)** - Documentation structure decisions
-- **[Discovery Phase Retrospective](./prototype/Discovery/2025-09-24--discovery-phase--retrospective-analysis.md)** - Comprehensive progress assessment
+- **[Consolidated Audit Report](./Discovery/2025-09-24--consolidated-audit--report.md)** - Engineering audit with ⭐⭐⭐⭐⭐ ratings
+- **[Lessons Learned](./knowledge-base/retrospectives/2025-09-24--discovery-phase--lessons-learned.md)** - Process improvements
+- **[Tech Stack Analysis](./prototype/crawl4ai/docs/as-is/2025-09-24--tech-stack--as-is.md)** - 204 dependencies analyzed
 
 ## Environment Variables
 
-The project has access to the following environment variables for future use:
+The project has access to the following environment variables:
 - `HX_DIP_VAR` - Project-specific variable
 - `HX_DIP_SECRET` - Project-specific secret
+- `OPENAI_API_KEY` - Required for RAG functionality
 
 ## Getting Started
 
 ### Prerequisites
 
-- **AI Coding Agent**: Cursor (configured for this project)
 - **Python 3.11+**
 - **Git**
-- **uv** for package management
+- **OpenAI API Key** (for RAG functionality)
 
-### Development Workflow
+### Demo Development Workflow
 
-#### Current Phase: Discovery (As-Is Documentation)
-1. **Review Discovery Status**: Check [Discovery Tracker](./prototype/Discovery/2025-09-24--discovery-phase--deliverable-tracker.md) for current progress
-2. **Follow Priority Order**: Use [Priority Order](./prototype/Discovery/2025-09-24--discovery-phase--priority-order.md) for systematic completion
-3. **Apply As-Is Template**: Use proven template in `prototype/crawl4ai/docs/templates/`
-4. **Document Current Behavior**: Focus strictly on As-Is behavior, no redesigns or refactors
+#### Current Phase: Citadel Demo
+1. **Review Demo Requirements**: Check [Citadel Demo PRD](./Explore/2025-09-24--citadel-demo--prd.md)
+2. **Stay Phase-Focused**: Reference [Phase Reality Check](./Explore/2025-09-24--phase-reality-check.md) to avoid scope creep
+3. **Track Progress**: Use [Deliverables Tracker](./Explore/2025-09-24--explore-phase--deliverables-tracker.md)
+4. **Build Demo Features**: Focus on demonstration capabilities, not production features
 
-#### Future Phase: Specification & Implementation
-1. **Read the Documentation**: Start with the [Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)
+#### Future Development
+1. **Read Documentation**: Start with [Project Overview](./knowledge-base/overview/2025-09-24--hx-data-ingestion--project-overview.md)
 2. **Navigate to Workspace**: `cd "spec kit"`
 3. **Follow SDD Process**: Use the [SDD Workflow Guide](./knowledge-base/guides/2025-09-24--sdd-workflow--guide.md)
-4. **Begin with Constitution**: Use `/constitution` to establish project principles
-5. **Define Features**: Use `/specify` → `/clarify` → `/plan` → `/analyze` → `/implement`
+4. **Reference Backlog**: Use evidence-based items from [V2 Backlog](./Discovery/2025-09-24--v2-backlog--product-backlog.md)
 
 ## Core Principles
 
-- **Intent-Driven Development**: Focus on WHAT and WHY before HOW
-- **Executable Specifications**: Specs generate working implementations
-- **Continuous Refinement**: Iterative improvement through AI-powered validation
-- **Constitutional Compliance**: All development aligns with project principles
+- **Demo-First Approach**: Build to demonstrate value and gather feedback
+- **Evidence-Based Development**: All requirements backed by Discovery phase findings
+- **Phase Discipline**: Stay focused on current phase, resist jumping ahead
+- **Stakeholder Feedback**: Design for socialization and feedback collection
+- **Spec-Driven Development**: Specifications drive implementation
 - **Documentation Excellence**: Comprehensive, organized, and current documentation
 
 ## Contributing
 
-This project uses Spec-Driven Development with enhanced documentation standards:
+This project uses Spec-Driven Development with phase-focused discipline:
 
-1. **Review Documentation**: Understand project approach and current status
-2. **Navigate to Workspace**: Work in `spec kit/` directory for feature development
-3. **Follow SDD Workflow**: Use the established 7-step process
-4. **Maintain Standards**: Follow knowledge-base naming conventions and front matter requirements
-5. **Document Decisions**: Use ADR process for architectural choices
+1. **Understand Current Phase**: Review phase-specific documentation and constraints
+2. **Follow SDD Workflow**: Use the established 7-step process for feature development
+3. **Maintain Phase Focus**: Avoid production concerns during demo development
+4. **Document Decisions**: Use ADR process for architectural choices
+5. **Collect Feedback**: Build mechanisms to gather stakeholder input
 
 ## License
 
@@ -139,4 +192,4 @@ This project is licensed under the MIT License.
 
 ---
 
-**Ready to begin specification and development using the enhanced Spec Kit methodology with organized knowledge management.**
+**Citadel: Demonstrating how modern AI transforms information access through intelligent crawling, processing, and retrieval.**
