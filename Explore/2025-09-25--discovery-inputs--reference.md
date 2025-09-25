@@ -22,7 +22,7 @@ date: "2025-09-25"
 - **[Discovery Phase Priority Order](../Discovery/2025-09-24--discovery-phase--priority-order.md)** - Prioritized order of Discovery activities and deliverables
 
 #### **Architecture & Design Planning**
-- **[V2 Design Plan (ADR)](../Discovery/2025-09-24--v2-design-plan--adr.md)** - Architectural Decision Record for V2 system design approach
+- **[V2 Design Plan (ADR)](2025-09-25--v2-design-plan--adr.md)** - Updated Architectural Decision Record for V2 system design approach (supersedes Discovery version)
 
 #### **Quality Assurance & Analysis**
 - **[Consolidated Audit Report](../Discovery/2025-09-24--consolidated-audit--report.md)** - Comprehensive engineering audit results for all prototype components
