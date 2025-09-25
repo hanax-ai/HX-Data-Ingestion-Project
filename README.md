@@ -1,4 +1,4 @@
-# Citadel - AI-Powered Information Access
+# Citadel - Data Pipeline
 
 **This project demos how modern AI can transform information access. Using a documentation crawler with retrieval-augmented generation (RAG), it collects content from websites, text or Markdown files, and sitemaps. The material is then organized and stored in a searchable knowledge base, which can be explored through an easy-to-use web interface.**
 
