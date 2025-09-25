@@ -11,14 +11,17 @@ date: "2025-09-24"
 
 ## Architecture Mapping Overview
 
-| **Layer** | **As-Is (Prototype)** | **To-Be (Citadel Demo)** | **Change Type** |
-|-----------|----------------------|--------------------------|-----------------|
-| **Product Identity** | Unnamed prototype | **Citadel** branded demo | **NEW** |
-| **User Interface** | Basic Streamlit | Polished Citadel UI | **MODIFY** |
-| **Core Logic** | Functional modules | Demo-optimized modules | **MODIFY** |
-| **Data Storage** | ChromaDB local | ChromaDB local (demo) | **KEEP** |
-| **Dependencies** | 204 packages | 204 packages (demo-safe) | **KEEP** |
-| **Deployment** | Development setup | Demo deployment package | **NEW** |
+**Based on Confirmed HX-Infrastructure Standards:**
+
+| **Component** | **As-Is (Prototype)** | **To-Be (Citadel Demo)** | **Status** | **Change Type** |
+|---------------|----------------------|--------------------------|------------|-----------------|
+| **Vector Database** | chromadb | **Qdrant** | Confirmed | **MIGRATE** |
+| **LLM Client** | openai, anthropic, etc. | **litellm** | Confirmed | **MIGRATE** |
+| **Web UI** | streamlit | **Open Web-UI** | Confirmed | **MIGRATE** |
+| **Python Runtime** | Python 3.11+ | **Python 3.12** | Confirmed | **UPGRADE** |
+| **Hosting** | Local Machine | **Orchestration Server** | Confirmed | **MIGRATE** |
+| **Product Identity** | Unnamed prototype | **Citadel** branded demo | New | **NEW** |
+| **Dependencies** | 204 packages | Optimized stack | TBD | **OPTIMIZE** |
 
 ## Detailed Component Mapping
 
@@ -215,56 +218,107 @@ TO-BE: Citadel Demo Package
 - **Configuration:** Demo-specific environment settings
 - **Troubleshooting:** Common demo issue resolution
 
-## Critical Demo Fixes Required
+#### Technology Migration Plan
 
-### **High Priority (Demo Blocking)**
+### **Confirmed Migrations for Citadel Demo**
 
-#### **BL-003: Network Timeout/Retry**
+#### **Vector Database: ChromaDB → Qdrant**
 ```
-AS-IS: requests.get() calls without timeouts
+AS-IS: ChromaDB local storage
+├── chromadb==1.0.7
+├── Local file storage
+├── Single-user access
+├── Development persistence
+└── No distributed capability
+
+TO-BE: Qdrant vector database
+├── qdrant-client integration
+├── Distributed storage capability
+├── Production-ready performance
+├── API-based access
+└── Scalable architecture
+```
+
+#### **LLM Client: Multiple clients → litellm**
+```
+AS-IS: Multiple LLM clients
+├── openai==1.76.2
+├── anthropic==0.50.0
+├── groq==0.23.1
+├── mistralai==1.7.0
+└── Provider-specific implementations
+
+TO-BE: Unified litellm interface
+├── litellm unified API
+├── Provider abstraction
+├── Consistent interface
+├── Simplified configuration
+└── Multi-provider support
+```
+
+#### **Web UI: Streamlit → Open Web-UI**
+```
+AS-IS: Streamlit interface
+├── streamlit==1.45.0
+├── Python-native UI
+├── Development-focused
+├── Limited customization
+└── Single-user design
+
+TO-BE: Open Web-UI
+├── Modern web interface
+├── Multi-user support
+├── Enhanced customization
+├── Production-ready UI
+└── Better user experience
+```
+
+#### **Python Runtime: 3.11+ → 3.12**
+```
+AS-IS: Python 3.11+
+├── Current compatibility
+├── Established ecosystem
+├── Stable performance
+└── Known limitations
+
+TO-BE: Python 3.12
+├── Latest performance improvements
+├── Enhanced async capabilities
+├── Better error handling
+└── Future-ready foundation
+```
+
+### **Critical Demo Fixes (Regardless of Technology)**
+
+#### **Network Resilience (BL-003)**
+```
+ISSUE: requests.get() calls without timeouts
 ├── Can hang indefinitely
 ├── No retry logic
 ├── Demo reliability risk
 └── Silent failures possible
 
-TO-BE: Demo-safe network calls
+SOLUTION: Robust network handling
 ├── 30-second timeouts
-├── 3-retry attempts
+├── 3-retry attempts with exponential backoff
 ├── Graceful failure handling
 └── Demo continuation capability
 ```
 
-#### **BL-005: Error Handling**
+#### **Error Handling (BL-005)**
 ```
-AS-IS: Silent failures with success exit codes
+ISSUE: Silent failures with success exit codes
 ├── Scripts can fail silently
 ├── No error propagation
 ├── Demo crash risk
 └── Difficult troubleshooting
 
-TO-BE: Demo-appropriate error handling
+SOLUTION: Proper error handling
 ├── Visible error messages
-├── Graceful degradation
-├── Demo continuation where possible
-└── Clear error reporting
-```
-
-### **Medium Priority (Demo Enhancement)**
-
-#### **BL-006: Structured Logging**
-```
-AS-IS: Print statements only
-├── print() for all output
-├── No log levels
-├── No structured data
-└── Difficult troubleshooting
-
-TO-BE: Basic demo logging
-├── Simple logging setup
-├── Demo troubleshooting info
-├── Progress indicators
-└── Error tracking
-```
+├── Non-zero exit codes on failure
+├── Graceful degradation where possible
+└── Clear error reporting for demos
+````
 
 ## Demo Architecture Diagram
 
