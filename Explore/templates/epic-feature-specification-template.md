@@ -23,9 +23,9 @@ tier: "epic"  # epic | standard | minor
 
 ```mermaid
 graph LR
-  A[Epic (E-###) — This Doc] --> B[Feature (F-###) — This Doc]
-  B --> C[Story (PROJ-###) — External Backlog]
-  C --> D[Task (PROJ-###-T1) — External Backlog]
+  A[Epic E-### - This Doc] --> B[Feature F-### - This Doc]
+  B --> C[Story PROJ-### - External Backlog]
+  C --> D[Task PROJ-###-T1 - External Backlog]
   subgraph Systems
     X[Jira/Azure DevOps/GitHub]:::ext
     Y[Reporting Dashboard]:::ext
