@@ -3,7 +3,7 @@
 $organization = "hana-x"
 $projectName = "Citadel"
 $projectId = "d6f864ff-302f-494a-9bf5-50a377a65e6c"  # Correct project ID
-$pat = "3IbP1DkWs12aNa3Qq6P7PZVwnjEyrvDquojqPLlfDkxor0U8P6mtJQQJ99BJACAAAAAAX1qVAAASAZDO1Wp2"
+$pat = "YOUR_AZURE_DEVOPS_PAT_TOKEN_HERE"
 
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($pat)"))
 

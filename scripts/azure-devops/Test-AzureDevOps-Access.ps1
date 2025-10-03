@@ -4,7 +4,7 @@
 
 $organization = "hana-x"
 $project = "HX-Data-Ingestion-Project Public"
-$pat = "3IbP1DkWs12aNa3Qq6P7PZVwnjEyrvDquojqPLlfDkxor0U8P6mtJQQJ99BJACAAAAAAX1qVAAASAZDO1Wp2"
+$pat = "YOUR_AZURE_DEVOPS_PAT_TOKEN_HERE"
 
 $apiVersion = "7.1-preview.3"
 

@@ -1,8 +1,9 @@
+
 # Fix API Integration - Debug and Create Epic 1
 
 $organization = "hana-x"
 $projectName = "Citadel"
-$pat = "3IbP1DkWs12aNa3Qq6P7PZVwnjEyrvDquojqPLlfDkxor0U8P6mtJQQJ99BJACAAAAAAX1qVAAASAZDO1Wp2"
+$pat = "YOUR_AZURE_DEVOPS_PAT_TOKEN_HERE"
 
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($pat)"))
 
